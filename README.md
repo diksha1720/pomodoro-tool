@@ -22,7 +22,7 @@ Pomodoro technique is a popular time management method that asks you to work in 
 ## Take a short break
 ![Screenshot](images/ss3.PNG)
 
-## Take a long break
+## Take a long break after four cycles
 ![Screenshot](images/ss4.PNG)
 
 
