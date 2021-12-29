@@ -13,16 +13,16 @@ Pomodoro technique is a popular time management method that asks you to work in 
 
 5. After four pomodoros, take a longer, more restorative 15-30 minute break.
 
-##Start the timer
+## Start the timer
 ![Screenshot](images/ss1.PNG)
 
-##Start working
+## Start working
 ![Screenshot](images/ss2.PNG)
 
-##Take a short break
+## Take a short break
 ![Screenshot](images/ss3.PNG)
 
-##Take a long break
+## Take a long break
 ![Screenshot](images/ss4.PNG)
 
 
