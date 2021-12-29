@@ -13,10 +13,18 @@ reps = 0
 time = None
 
 
-window = Tk()
-window.config(padx=50, pady=50, bg=YELLOW)
-window.title("Pomodoro")
-# ---------------------------- TIMER RESET ------------------------------- # 
+# ---------------------------- TIMER RESET ------------------------------- #
+
+
+def reset_timer():
+    global time
+    global reps
+    window.after_cancel(time)
+    title_text.config(text="Timer", fg=GREEN, font=(FONT_NAME, 35, "bold"), bg=YELLOW)
+    tick.config(text="")
+    canvas.itemconfig(timer_text, text="00:00")
+    reps = 0
+
 
 # ---------------------------- TIMER MECHANISM ------------------------------- #
 
@@ -44,16 +52,6 @@ def start_timer():
 
     # start_timer()
 
-
-def reset_timer():
-    global time
-    global reps
-    window.after_cancel(time)
-    title_text.config(text="Timer", fg=GREEN, font=(FONT_NAME, 35, "bold"), bg=YELLOW)
-    tick.config(text="")
-    canvas.itemconfig(timer_text, text="00:00")
-    reps = 0
-
 # ---------------------------- COUNTDOWN MECHANISM ------------------------------- #
 
 
@@ -79,6 +77,9 @@ def timer(count):
 
 # ---------------------------- UI SETUP -------------------------------
 
+window = Tk()
+window.config(padx=50, pady=50, bg=YELLOW)
+window.title("Pomodoro")
 
 canvas = Canvas(width=200, height=224, bg=YELLOW, highlightthickness=0)
 tomato_img = PhotoImage(file="tomato.png")
